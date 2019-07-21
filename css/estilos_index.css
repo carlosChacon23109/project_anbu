@@ -1,0 +1,22 @@
+/* reglas
+selectore
+declaraciones
+propiedades
+valores */
+
+header {
+    background-color : pink !important  ;
+    color: red
+}
+/* selector de etiqueta 
+-nombre de la etiqieta directa
+
+selector descendente
+-elemento hijo de otro elemento
+
+body header div nav ol li a {}
+------------selector de clase o de id-------
+.nombre_de_la_clase = selector de clase
+#nombre_del_id
+
+*/
