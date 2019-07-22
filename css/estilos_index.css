@@ -4,10 +4,11 @@ declaraciones
 propiedades
 valores */
 
-header {
+/* header {
     background-color : pink !important  ;
-    color: red
-}
+    color: red 
+} */
+
 /* selector de etiqueta 
 -nombre de la etiqieta directa
 
@@ -20,3 +21,46 @@ body header div nav ol li a {}
 #nombre_del_id
 
 */
+/* -------------------------------------- */
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic */
+    letter-spacing: -.2px
+    /* text-transform: uppercase; */
+    /* text-decoration: dashed; */   
+}
+h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    color: white;
+}
+h1 strong {
+    color: cornflowerblue;
+}
+.excont-details{
+    width: 500px;
+}
+.excont-imageContainer{
+    width: 500px;
+}
+.hero{
+    height: 300px;
+    background-image: url('../images/hero_anbu.jpg');
+    background-color: #1b2127;
+    background-size: 600px 500px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.header{
+    background-color:#1b2127;
+    color: white;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}

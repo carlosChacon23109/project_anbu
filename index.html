@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Anbu</title>
     <link rel="icon" type="image/png" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos_index.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="./images/logo_anbu.png" alt="Logo" width="100">
             </figure>
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
                         <a class="link" href="#contenido">Contenido</a><!--El # identifica enlaces internos del codigo como id-->
@@ -28,45 +29,51 @@
         </div>
     </header>
     <!-- SECTION PRINCIPAL DEL CODIGO-->
-    <section>
+    <section class="hero">
         <h1>
             Hola! somos <strong>Anbu</strong> <br/> <strong>Series & figures </strong>Bucaramanga <br/> la mejor tienda online freakShow
         </h1>
-        <img src = "images/hero_anbu.jpg" alt="imagen de pruebas" width="1200" height="400"/>
+
     </section>
-    <section id="contenido">
+    <section id="contenido" class="content">
             <h2>Contenido (Material destacado)</h2>
-        <article>
-            <h3>Contenido exclusivo de tiendas japonesas</h3>
-            <h6>Mug / DeathNote</h6>
-            <p><small><strong>Fecha Lanzamiento venta:</strong> 01/01/2019</small></p>
-            <p><small><strong>Para mas informacion encuentralo en este link : </strong> www.merchandisingAnime.com</small></p>
-            <p>Este producto cuenta con la certificacion de originalidad, Sera incluido en el catalogo coleccionable de la plataforma.<br> contara como bonus para el sorte del set de figuras de DeathNote </small></p>
-            <a href="https://www.youtube.com/watch?v=vaY23cCnvL0" target="_blank">Ver video</a>
-            <a href="./portafolio/index_portafolio.html" target="_blank">Ver el catalogo completo</a>
-            <img src="images/mercha_1.jpg" alt="mug_death_note" width="500">
+        <article class="exclusive_content">
+            <div class="excont-details">
+                <h3 class="excont-title">Contenido exclusivo de tiendas japonesas</h3>
+                <h6 class="excont-name_product">Mug / DeathNote</h6>
+                <p class="excont-release_date"><small><strong>Fecha Lanzamiento venta:</strong> 01/01/2019</small></p>
+                <p class="excont-url_page"><small><strong>Para mas informacion encuentralo en este link : </strong> www.merchandisingAnime.com</small></p>
+                <p class="excont-description">Este producto cuenta con la certificacion de originalidad, Sera incluido en el catalogo coleccionable de la plataforma.<br> contara como bonus para el sorte del set de figuras de DeathNote </small></p>
+                <a href="https://www.youtube.com/watch?v=vaY23cCnvL0" target="_blank">Ver video</a>
+                <a href="./portafolio/index_portafolio.html" target="_blank">Ver el catalogo completo</a>
+            </div>
+            <figure class="excont-imageContainer">
+                <img class="excont-image" src="images/mercha_1.jpg" alt="mug_death_note" width="500">
+            </figure>
         </article>
     </section>
     <section id="bestseller">
-            <h2>Lo mas vendido</h2>
-        <article>
-            <figure>
-                <img src="images/portfolio.jpg" alt="">
+        <h2>Lo mas vendido</h2>
+        <article class="best_seller">
+            <figure class="best_seller-imageContainer">
+                <img class="best_seller-image" src="images/portfolio.jpg" alt="">
             </figure>
-            <h3>Figura "L" multi-faces</h3>
-            <p>150 figuras de esta edicion fueron expedidos a latino-america con certificado de autenticidad. <br> Esta figura conforma el nuevo set coleccionable de la plataforma </p>
-            <a href=""> Ver Figuras de la coleccion</a>
+            <h3 class="best_seller-title">Figura "L" multi-faces</h3>
+            <p class="best_seller-description">150 figuras de esta edicion fueron expedidos a latino-america con certificado de autenticidad. <br> Esta figura conforma el nuevo set coleccionable de la plataforma </p>
+            <a class="best_seller-url" href=""> Ver Figuras de la coleccion</a>
         </article>
     </section>
-    <section id="contactos">
-        <form action="/pedidos/">
+    <section id="contactos" class="contact">
+        <form action="/pedidos/" class="form-email">
             <h3>Solicita tu pedido ¡ya!</h3>
             <label for="pedido" >Dejame tu pedido</label>
             <input type="text" placeholder="Dejame tu pedido" id="pedido"/>
             <button>Enviar</button>
         </form>
     </section>
-    <footer>Footer</footer>
+    <footer class="footer">
+        Footer
+    </footer>
     
 </body>
 </html>
