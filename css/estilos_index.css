@@ -38,9 +38,29 @@ h1{
     font-size: 40px;
     line-height: 1.5em;
     color: white;
+    margin: 10px 20px 7px 3px;
 }
 h1 strong {
     color: cornflowerblue;
+}
+
+.content{
+    /* border-top: 5px solid red;
+    border-right: 5px solid green;
+    border-left: 5px solid orange;
+    border-bottom: 5px solid pink; */
+    /* border-color: red; */
+    /* border-top-color: red; */
+    /* color: blue; */
+    /* border-width: 5px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* border-top-left-radius: 50px; */
+    margin-bottom: 15px;
+    
+
+
 }
 .excont-details{
     width: 500px;
