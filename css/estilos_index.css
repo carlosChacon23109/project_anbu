@@ -24,6 +24,7 @@ body header div nav ol li a {}
 /* -------------------------------------- */
 body{
     font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,13 +55,23 @@ h1 strong {
     /* color: blue; */
     /* border-width: 5px;
     border-style: solid; */
+    /*border: 1px solid gray;
+    border-radius: 10px;*/
+    /* border-top-left-radius: 50px; */
+    /*margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;*/
+    background: #fafafa;
+    
+}
+.exclusive_content{
     border: 1px solid gray;
     border-radius: 10px;
     /* border-top-left-radius: 50px; */
+    margin: 10px;
     margin-bottom: 15px;
-    
-
-
+    padding: 20px;
+    background: white;
 }
 .excont-details{
     width: 500px;
