@@ -39,7 +39,8 @@ h1{
     font-size: 40px;
     line-height: 1.5em;
     color: white;
-    margin: 10px 20px 7px 3px;
+    /* margin: 10px 20px 7px 3px; */
+    margin: 0px;
 }
 h1 strong {
     color: cornflowerblue;
@@ -72,6 +73,8 @@ h1 strong {
     margin-bottom: 15px;
     padding: 20px;
     background: white;
+    box-sizing: border-box;
+    display:flex;
 }
 .excont-details{
     width: 500px;
@@ -86,12 +89,66 @@ h1 strong {
     background-size: 600px 500px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 .header{
     background-color:#1b2127;
     color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
 }
 .header a {
     color: white;
     text-decoration: none;
+}
+.header figure img {
+    height: 150px;
+    width: 90px;
+}
+.menu {
+    height: inherit;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.header ol li {
+    height: inherit;
+}
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 20px;
+}
+
+.flexbox{
+    display: flex;
+    /* flex-direction: column; *//*direccion de la flexibilidad de la caja*/
+    flex-wrap: wrap; /*realiza el efecto de caida de caja cuando se llega al limite de ancho (nowrape realiza lo inverso)*/
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border : 1px solid red;
+    flex-shrink: 0;/*Controla el porcentaje de flexibilidad que puede adoptar una caja desde 0(ninguna) hasta 1(100%)*/
+    margin: 5px;
+}
+.footer{
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p img {
+    height: 60px;
+    width: 30px;
+    vertical-align: middle;
 }
