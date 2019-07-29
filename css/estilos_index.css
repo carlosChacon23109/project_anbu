@@ -45,6 +45,14 @@ h1{
 h1 strong {
     color: cornflowerblue;
 }
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 
 .content{
     /* border-top: 5px solid red;
@@ -63,13 +71,14 @@ h1 strong {
     margin-bottom: 15px;
     padding: 20px;*/
     background: #fafafa;
+    padding: 20px 
     
 }
 .exclusive_content{
     border: 1px solid gray;
     border-radius: 10px;
     /* border-top-left-radius: 50px; */
-    margin: 10px;
+    /* margin: 10px; */
     margin-bottom: 15px;
     padding: 20px;
     background: white;
