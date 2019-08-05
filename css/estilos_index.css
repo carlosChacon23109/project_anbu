@@ -51,6 +51,7 @@ h2 {
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 40px;
 }
 
 
@@ -84,12 +85,30 @@ h2 {
     background: white;
     box-sizing: border-box;
     display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .excont-details{
     width: 500px;
 }
 .excont-imageContainer{
-    width: 500px;
+    width: 400px;
+}
+.excont-title{
+    font-size : 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.excont-name_product, 
+.excont-release_date,
+.excont-url_page {
+    margin : 10px 0px;
+}
+.excont-description{
+    font-size: 20px;
+}
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
 }
 .hero{
     height: 300px;
@@ -160,4 +179,104 @@ h2 {
     height: 60px;
     width: 30px;
     vertical-align: middle;
+}
+/* estilos bestseller */
+.best_seller{
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 415px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+}
+.bestseller-title{
+    margin-left: 20px;
+}
+.best_seller img {
+    width: 415px;
+    height: 300px;
+    margin: 0px;
+    object-fit: cover;
+}
+.best_seller-imageContainer {
+    margin: 0;
+}
+.best_seller-content{
+    display: flex;
+}
+.best_seller-details{
+    margin: 20px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.best_seller-description{
+    text-align: left;
+}
+.best_seller-url{
+    color:#056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social {
+    /* border:1px solid red; */
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border:1px solid white; */
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+.social-link.twitter{
+    background-image: url(../images/logo_twitter_4.png);
+}
+.social-link.facebook{
+    background-image: url(../images/logo_facebook_4.svg);
+}
+.social-link.github{
+    background-image: url(../images/logo_gitub.svg);
+}
+.social-link.instagram{
+    background-image: url(../images/logo_instagram_2.png);
+}
+/* FORMULARIO */
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    border-radius: 5px;
+    background-image: url(../images/envelope.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+.form-email button {
+    display: block;
+    /* margin-top: 10px; */
+    background:transparent;
+    color:white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    /* margin: 10px auto 0; */
+    margin-top: 10px;   
+}
+.form-email h3{
+    font-family: 'Source Sans Pro',sans-serif; 
 }
