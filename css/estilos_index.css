@@ -21,10 +21,64 @@ body header div nav ol li a {}
 #nombre_del_id
 
 */
-/* -------------------------------------- */
+@font-face {
+    font-family: "njnaruto";
+    src: url(../fonts/ninja_naruto/njnaruto.ttf);
+}
+/* ---------------ICONO----------------------- */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?wxz7wk');
+    src:  url('../fonts/icomoon.eot?wxz7wk#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?wxz7wk') format('truetype'),
+      url('../fonts/icomoon.woff?wxz7wk') format('woff'),
+      url('../fonts/icomoon.svg?wxz7wk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-wight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu_anbu:before {
+    content: "\e900";
+}
+/* -------------------------------------------------------- */
+/* -----------------Fuente naruto-------------------------- */
+/*----------------------------------------------------------*/
+.burguer-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(0,0,0,.8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index:4;
+    left:5px;
+    top: 5px;
+    color: white;
+}
 body{
     font-family: 'Source Sans Pro',sans-serif;
     margin: 0;
+}
+.logo{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -202,8 +256,8 @@ h2 {
 /* estilos bestseller */
 .best_seller{
     /* border: 1px solid red; */
-    margin: 10px;
-    width: 415px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -213,7 +267,7 @@ h2 {
     margin-left: 20px;
 }
 .best_seller img {
-    width: 415px;
+    width: 100%;
     height: 300px;
     margin: 0px;
     object-fit: cover;
@@ -316,9 +370,56 @@ h2 {
 }
 /* MEDIA QUERIES */
 /* DESKTOP FIRST LOS MEDIA QUERIES DEBEN INICIAR DESDE EL MAS GRANDE */
-
+.html-video{
+    width: 100%;
+    height: auto;
+    /* max-width: 100%; */
+}
+.youtube-video{
+    /* width: 100%;
+    height: auto; */
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.flexible-video {
+    width: 100%;
+    height: 0;
+    background: blue;
+    padding-top: 56.25%;
+    position: relative;
+}
 /* ------------------MEDIDAS ESTANDAR  (1024 - 768 - 480 - 320 )*/
 @media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 1em;
+    }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+        background: rgba(0,0,0,.5);
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        top     : 0;
+        right   : 0;
+        bottom  : 0;
+        left    : 0;
+        width: 100%;
+    
+    }
 }
 @media screen and (max-width: 767px) {
     /*body{
@@ -336,9 +437,37 @@ h2 {
     }
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        font-family: "njnaruto";
+        /* text-decoration: underline; */
+        border:1px solid white;
+        margin-bottom: .4em;
     }
     .header .logo {
         text-align: center;
+    }
+    .logo{
+        height: 150px;
+    }
+    .menu{
+        position: fixed;
+        /* background: red; */
+        background: rgba(100, 149, 237,.9);
+        /* background-color: rgb(100, 149, 237); */
+        z-index: 3;
+        left:-100vw;
+        top:0;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left:0;
     }
     .exclusive_content {
         display: block;
@@ -371,13 +500,57 @@ h2 {
         width: auto;
         text-align: center;
     }
+    .burguer-button {
+        display: block;
+    }
 }
 @media screen and (max-width: 480px) {
     .excont-details {
         width: auto;
         font-size: 12px;
     }
+    .best_seller{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .best_seller-details{
+        /* margin: -40px 10px 10px 10px; */
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        display: block;
+        text-align: center;
+    }
+    .form-email button {
+        margin : 1em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .header a {
+        font-size: 1.4em;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    h1{
+        font-size:1.2em;
+    }
+    .hero{
+        padding: 2em 1em;
+    }
+    .header a {
+        font-size: 1em;
+    }
 }
