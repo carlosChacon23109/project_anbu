@@ -395,7 +395,7 @@ h2 {
     position: relative;
 }
 /* ------------------MEDIDAS ESTANDAR  (1024 - 768 - 480 - 320 )*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .container {
         padding: 0 1em;
     }
@@ -425,6 +425,10 @@ h2 {
     /*body{
         border : 10px solid green;
     }*/
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
     .header {
         display: block;
         height: auto;
@@ -493,7 +497,7 @@ h2 {
         font-size: 1em;
     }
     .excont-description{
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .excont-imageContainer {
@@ -507,7 +511,7 @@ h2 {
 @media screen and (max-width: 480px) {
     .excont-details {
         width: auto;
-        font-size: 12px;
+        font-size: 15px;
     }
     .best_seller{
         width: auto;
@@ -540,6 +544,11 @@ h2 {
     }
     .header a {
         font-size: 1.4em;
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
 

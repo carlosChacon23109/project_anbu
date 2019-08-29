@@ -1,10 +1,9 @@
 //LOGICA MENU HAMBURGUESA
 const ipad = window.matchMedia('screen and (max-width:767px)');
-const float_buttom = document.querySelector('#burguer_buttom');
-float_buttom.addEventListener('click',f_hideOrShow,false);
 
 ipad.addListener(f_showOrHide);
 function f_showOrHide  (event) {
+    const float_buttom = document.querySelector('#burguer_buttom');
      console.log(event.matches);
      if(event.matches){   
         float_buttom.addEventListener('click',f_hideOrShow,false);       
@@ -21,3 +20,4 @@ function f_hideOrShow (menu) {
         menu.classList.add('is-active');
     }
 }
+f_showOrHide(ipad);
